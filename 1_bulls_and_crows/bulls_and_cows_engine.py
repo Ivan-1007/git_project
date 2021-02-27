@@ -13,8 +13,6 @@ def get_secret_number():
         _secret_number.append(number_list[rand_index])
         number_list.remove(number_list[rand_index])
 
-    _secret_number = [1, 2, 3, 4]
-
 
 def number_check(player_number):
     player_number_list = []
@@ -31,7 +29,6 @@ def number_check(player_number):
                 continue
             if player_number_list[i] == _secret_number[j]:
                 res['crow'] = res['crow'] + 1
-
     return res
 
 
