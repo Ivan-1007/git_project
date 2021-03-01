@@ -8,7 +8,7 @@ while True:
     player_number = None
     while True:
         player_number = input('Введите предпологаемое число\n')
-        if game.is_not_valid_input(player_number):
+        if game.is_invalid_input(player_number):
             print('Неправильный ввод, попробуйте еще ...')
         else:
             break
